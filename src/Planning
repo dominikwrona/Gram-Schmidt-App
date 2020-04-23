@@ -1,0 +1,39 @@
+
+Bug 0.01
+- fix the new java version problems
+Status: fixed, it was actually bug on their side that bc I raised it is now fixed
+
+User Story 1
+Status: Done (some tests might still need to be conducted)
+- check if the provided vectors are independent
+estimate: 1 hr
+actual: 7,8 hrs?
+
+User Story 1.5 Independence for Square matrices
+- done: accomplished through recursive cofactor expansion (checking if det != 0)
+actual: i dunno like 2 hrs?
+
+
+User Story 2
+Status: Not started
+- create a working gram schmidt calculation for R2
+estimate: 1-2 hrs
+
+User Story 3
+- create a GUI for the app
+Status: In Progress
+estimate: 3 hours
+
+Add:
+- To do: make main step recursive
+- make sure user knows limitations: ex. only works on integers, max vector quantity 99
+- handle Error cases: different vector sizes (i.e. (1,2), (1,2,3,4))
+					  dim or textfield (or both) is empty when submit button is pressed
+					  a non-integer is entered into the dim field or vectors are in improper format
+					  Error: if there is a 1 that is not leading, final recursive will find it by mistake
+					  Dimension field is wrong (ex. dim 3 but vectors are only dim 2) (see if we even need dim, just take matrix.get(0).size)
+					  floating point multiplication problems ??
+					  - better to use doubles (64 bit) vs floats :( - simple find & replace should be enough
+					  
+					  problem (e.g. in readme) - the difficulty of getting java to pass Arraylists by value (they like other objects always
+					   end up getting passed by reference), with impacts on the runtime as well
