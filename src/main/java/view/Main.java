@@ -14,7 +14,7 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import model.Model;
 
-public class GramSchmidtApp extends Application {
+public class Main extends Application {
 	Model model;
 	
 	public void start(Stage stage) throws Exception {
@@ -64,7 +64,7 @@ public class GramSchmidtApp extends Application {
 	}
 	
 	public static void main(String[] args) {
-		new GramSchmidtApp();
+		new Main();
 		launch();
 	}
 }
